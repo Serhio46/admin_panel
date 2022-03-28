@@ -5,13 +5,11 @@ import Navbar from '../../components/navbar/Navbar';
 import Widget from '../../components/widget/Widget';
 import FeaturedChart from '../../components/charts/featured/Featured';
 import NormalChart from '../../components/charts/normal/NormalChart';
+import Table from '../../components/table/Table';
 
 const Home = () => {
     return (
         <div className={classes.home}>
-            <Sidebar />
-            <div className={classes.container}>
-                <Navbar />
                 <div className={classes.widgets}>
                     <Widget type='user' />
                     <Widget type='order'/>
@@ -22,7 +20,10 @@ const Home = () => {
                         <FeaturedChart />
                         <NormalChart />
                 </div>
-            </div>
+                <div className={classes.listContainer}>
+                    <div className={classes.listTitle}>Latest transactions</div>
+                    <Table />
+                </div>
         </div>
         
     );
