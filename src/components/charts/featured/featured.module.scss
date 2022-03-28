@@ -1,0 +1,75 @@
+.chart {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(201,201,201,0.47);
+    flex: 2;
+
+
+    .title {
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+    }
+
+    .icon {
+        font-size: 20px;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .bottom {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;   
+        gap: 15px;
+
+        .amount {
+            font-size: 30px;
+        }
+
+        .desc {
+            font-weight: 300;
+            font-size: 14px;
+            color: gray;
+            
+        }
+
+        .summary {
+            width: 100%;
+            display: flex;
+            align-content: center;
+            justify-content: space-around;
+
+            .item {
+                text-align: center;
+
+                .itemTitle {
+                    font-size: 14px;
+                    color: gray;
+                }
+
+                .itemResult {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                    font-size: 14px;
+
+                    &.positive{
+                        color: green;
+                    }
+
+                    &.negative {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+   
+}

@@ -1,7 +1,10 @@
 import React from 'react';  
 import classes from './home.module.scss';
 import Sidebar from '../../components/sidebar/Sidebar';
-import Navbar from '../../components/navbar/Navbar'
+import Navbar from '../../components/navbar/Navbar';
+import Widget from '../../components/widget/Widget';
+import FeaturedChart from '../../components/charts/featured/Featured';
+import NormalChart from '../../components/charts/normal/NormalChart';
 
 const Home = () => {
     return (
@@ -9,7 +12,16 @@ const Home = () => {
             <Sidebar />
             <div className={classes.container}>
                 <Navbar />
-                container
+                <div className={classes.widgets}>
+                    <Widget type='user' />
+                    <Widget type='order'/>
+                    <Widget type='earning'/>
+                    <Widget type='balance'/>
+                </div>
+                <div className={classes.charts}>                    
+                        <FeaturedChart />
+                        <NormalChart />
+                </div>
             </div>
         </div>
         
