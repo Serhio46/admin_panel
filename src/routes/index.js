@@ -3,6 +3,7 @@ import List from "../pages/list/List";
 import Login from "../pages/login/Login";
 import New from "../pages/new/New";
 import Single from "../pages/single/Single";
+import { userInputs, productInputs } from '../data/data';
 
 export const routesName =  {
     'HOME': '/',
@@ -20,9 +21,9 @@ export const publicRoutes = [
     { 'path': routesName.HOME, 'component': Home },
     { 'path': routesName.LOGIN, 'component': Login },
     { 'path': routesName.USERS, 'component': List },
-    { 'path': routesName.NEW_USER, 'component': New },
+    { 'path': routesName.NEW_USER, 'component': New, 'props': {inputs: userInputs, title: "Add New User"} },
     { 'path': routesName.SINGL_EUSER, 'component': Single },
     { 'path': routesName.PRODUCTS, 'component': List },
     { 'path': routesName.SINGLE_PRODUCT, 'component': Single },
-    { 'path': routesName.NEW_PRODUCT, 'component': New },
+    { 'path': routesName.NEW_PRODUCT, 'component': New, 'props': {inputs: productInputs, title: "Add New Product"}  },
  ];

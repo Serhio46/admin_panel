@@ -175,3 +175,75 @@ export const tableData  = [
       age: 65,
     },
   ];
+
+  export const userInputs = [
+    {
+      id: 1,
+      label: "Username",
+      type: "text",
+      placeholder: "user name",
+    },
+    {
+      id: 3,
+      label: "Email",
+      type: "mail",
+      placeholder: "email@email.com",
+    },
+    {
+      id: 4,
+      label: "Phone",
+      type: "text",
+      placeholder: "+375-XX-XXXXXXX",
+    },
+    {
+      id: 5,
+      label: "Password",
+      type: "password",
+      placeholder: '*********',
+    },
+    {
+      id: 6,
+      label: "Address",
+      type: "text",
+      placeholder: "Lenina str, 1, Minsk",
+    },
+    {
+      id: 7,
+      label: "Country",
+      type: "text",
+      placeholder: "Belarus",
+    },
+  ];
+
+  export const productInputs = [
+    {
+      id: 1,
+      label: "Title",
+      type: "text",
+      placeholder: "Apple Macbook Pro",
+    },
+    {
+      id: 2,
+      label: "Description",
+      type: "text",
+      placeholder: "Description",
+    },
+    {
+      id: 3,
+      label: "Category",
+      type: "text",
+      placeholder: "Computers",
+    },
+    {
+      id: 4,
+      label: "Price",
+      type: "text",
+      placeholder: "100",
+    },
+    {
+      id: 5,
+      label: "Stock",
+      type: "text",
+      placeholder: "in stock",
+    },
+  ];

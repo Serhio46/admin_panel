@@ -5,7 +5,6 @@ import Table from '../../components/table/Table';
 
 import Avatar from '@mui/material/Avatar';
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
-import { Tab } from '@mui/material';
 
 const Single = () => {
     return (

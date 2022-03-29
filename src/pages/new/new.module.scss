@@ -1,3 +1,88 @@
-.color {
-    color: red;
+.new {
+    padding: 20px;;
+    .top {
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(201,201,201,0.47);
+    }
+
+    .bottom {
+        display: flex;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(201,201,201,0.47);
+        
+        .left {
+            flex: 1;
+            text-align: center;
+            align-self: center;
+            
+            .img {
+                width: 100px;
+                height: 100px;
+                background-color: lightgray;
+                border-radius: 50%;
+                color: gray;
+            }
+        }
+
+        .right {
+            flex: 3;
+
+            form {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 30px;
+
+                .formInput {
+                    width: 40%;
+
+                    &:nth-last-child(2){
+                        align-self: center;
+                    }
+
+                    &:nth-last-child(1) {
+                        text-align: center;
+                    }
+
+                    .icon {
+                        cursor: pointer;
+                    }
+
+                    label {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                    }
+
+                    input {
+                        width: 100%;
+                        padding: 5px;
+                        border: none;
+                        border-bottom: 1px solid gray;
+                        outline: none;
+                    }
+                }
+
+                .btn {
+                    width: 150px;
+                    padding: 10px;
+                    border: none;
+                    background-color: teal;
+                    color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .title {
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: rgba(160,160,160);
+    }
 }

@@ -6,7 +6,10 @@ const AppRouter = () => {
         <>
             <Routes>
                 {publicRoutes.map((route) => {
-                return <Route path={route.path} element={<route.component />} key={route.path} /> 
+                    if(route.props) {
+                        return <Route path={route.path} element={<route.component props={route.props} />} key={route.path} />
+                    }
+                        return <Route path={route.path} element={<route.component />} key={route.path} /> 
                 })}
                 <Route path="*" element={<Navigate to={routesName.HOME} replace />} />
             </Routes>
