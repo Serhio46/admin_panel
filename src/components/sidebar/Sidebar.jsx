@@ -1,4 +1,5 @@
 import classes from './sidebar.module.scss';
+import { Link } from 'react-router-dom';
 
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import PersonIcon from '@mui/icons-material/Person';
@@ -23,15 +24,20 @@ const Sidebar = () => {
             <div className={classes.center}>
                 <ul>
                     <p className={classes.title}>MAIN</p>
-                    <li>
-                    <DashboardIcon className={classes.icon}/>
-                        <span>Dashboard</span> 
-                    </li>
-                    <p className={classes.title}>LIST</p>
-                    <li>
-                        <PersonIcon className={classes.icon}/>
-                        <span>Users</span>
-                    </li>
+                        <Link to='/'>
+                            <li>
+                            <DashboardIcon className={classes.icon}/>
+                                <span>Dashboard</span> 
+                            </li>
+                        </Link>
+                        <p className={classes.title}>LIST</p>
+                        <Link to='/users'>
+                            <li>
+                                <PersonIcon className={classes.icon}/>
+                                <span>Users</span>
+                            </li>
+                        </Link>
+
                     <li>
                         <Inventory2Icon className={classes.icon}/>
                         <span>Products</span>

@@ -1,6 +1,7 @@
 import classes from './datatable.module.scss';
 import { usersData } from '../../data/data';
 
+import { Link } from 'react-router-dom';
 import { DataGrid } from '@mui/x-data-grid';
 
 const columns = [
@@ -42,10 +43,12 @@ const columns = [
 
 const DataTable = () => {
 
-    const actionColumn = [{field: 'action', headerName: 'Action', width: 200, renderCell: () => {
+    const actionColumn = [{field: 'action', headerName: 'Action', width: 200, renderCell: (params) => {
         return (
             <div className={classes.action}>
-                <div className={classes.wiewButton}>Wiew</div>
+                <Link to={`/users/${params.row.id}`}>
+                    <div className={classes.wiewButton}>Wiew</div>
+                </Link>
                 <div className={classes.deleteButton}>Delete</div>
             </div>
         )
